@@ -34,7 +34,7 @@ public class QuestionsPage {
 
         if (index < questionElements.size()) {
             WebElement question = questionElements.get(index);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", question);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", question);
             question.click();
 
             List<WebElement> answerElements = driver.findElements(answers);
